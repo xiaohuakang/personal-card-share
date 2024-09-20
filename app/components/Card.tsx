@@ -43,7 +43,7 @@ const Card: React.FC<CardProps> = ({ data }) => {
   };
 
   return (
-    <div className="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden">
+    <div className="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden dark:text-black">
       {/* 头部信息 */}
       <div className={`p-6 bg-gradient-to-r ${data.headerGradient} text-white`}>
         <div className="w-24 h-24 rounded-full bg-white mx-auto mb-4 border-4 border-white overflow-hidden">

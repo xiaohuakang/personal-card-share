@@ -12,6 +12,11 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+
+  .dark\:text-black {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
 }
 
 body {

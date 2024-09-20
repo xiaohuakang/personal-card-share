@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "IntroCard",
+  title: "AI 名片生成器 - Kernel",
   description: "IntroCard is a tool that helps you create a personalized business card with your own information.",
 };
 

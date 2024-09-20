@@ -14,23 +14,23 @@ const iconMap: { [key: string]: LucideIcon } = {
   Briefcase, Star, Book, Heart, Rocket, Trophy, Zap, Coffee
 };
 const defaultCardData: CardData = {
-  name: "雷布斯",
-  location: "北京",
-  tags: ["企业家", "投资人", "科技创新者"],
-  recentFocus: "推动小米集团在智能家居和电动汽车领域的创新",
+  name: "珍妮玛士多",
+  location: "广东",
+  tags: ["全干攻城狮", "国家二级摸鱼运动员", "全国退堂鼓大赛冠军"],
+  recentFocus: "推动吃嘛集团在智慧餐饮领域的创新",
   highlights: [
-    "创立小米科技，打造全球领先的智能手机品牌",
-    "担任金山软件董事长，推动公司转型",
-    "入选《财富》“全球最具影响力的50位商界领袖”"
+    "奇艺、优酷、腾讯视频等知名视频网站超级会员体验官",
+    "全球最具影响力的50位商界领袖的忠实粉丝",
+    "2006美国《时代周刊》年度风云人物"
   ],
   skills: [
     { name: "企业管理", description: "擅长战略规划和团队领导", color: "blue" },
-    { name: "产品创新", description: "推动“米粉文化”和“性价比战略”", color: "green" },
+    { name: "产品创新", description: "推动“摸鱼文化”和“退堂鼓战略”", color: "green" },
     { name: "投资眼光", description: "成功投资多家科技创新企业", color: "purple" },
     { name: "品牌营销", description: "善于利用社交媒体塑造个人品牌", color: "orange" }
   ],
-  hobbies: ["📚 阅读", "🏃‍♂️ 跑步", "✈️ 旅行","👌 ARE YOU OK"],
-  motto: "永远相信美好的事情即将发生",
+  hobbies: ["📚 阅读", "🏃‍♂️ 跑步", "✈️ 旅行", "👌 ARE YOU OK"],
+  motto: "得闲饮茶",
   headerGradient: "from-orange-500 to-red-500",
   icons: {
     recentFocus: "Rocket",
@@ -134,7 +134,7 @@ export default function CardGenerator() {
                   'image/png': blob
                 })
               ]);
-            //   alert('名片已成功复制到剪贴板！');
+              //   alert('名片已成功复制到剪贴板！');
             } catch (err) {
               console.error('复制到剪贴板失败:', err);
               alert('复制到剪贴板失败，请重试。');
@@ -162,7 +162,7 @@ export default function CardGenerator() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 md:p-8 p-4">
-      <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">AI 个人名片生成器</h1>
+      <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">AI 名片生成器</h1>
       <div className="flex flex-col md:flex-row max-w-7xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="w-full md:w-1/3 p-6 bg-gray-50">
           <InputPanel onGenerate={handleGenerate} />
@@ -180,11 +180,11 @@ export default function CardGenerator() {
               </div>
               <div className="flex justify-center items-center space-x-4">
                 <button
-                    onClick={handleExport}
-                    className="mt-4 flex items-center bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors"
+                  onClick={handleExport}
+                  className="mt-4 flex items-center bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors"
                 >
-                    <Download size={20} className="mr-2" />
-                    导出名片
+                  <Download size={20} className="mr-2" />
+                  导出名片
                 </button>
 
                 {/* <button
@@ -200,15 +200,15 @@ export default function CardGenerator() {
         </div>
       </div>
       <span className="text-sm text-gray-600 text-center block mt-4">
-        tips:AI生成内容仅供参考，请以实际情况为准 
-        
+        Tips: AI 生成内容仅供参考，请以实际情况为准
+
       </span>
-      <div className="flex justify-center items-center space-x-4">
-      <Link href={'https://x.com/sh_awai'} className={'font-dingTalk'}>
-                    <FaSquareXTwitter size={'18'}></FaSquareXTwitter>
-                </Link>
-                </div>
-      
+      <div className="flex justify-center items-center space-x-4 dark:text-black">
+        {/* <Link href={'https://x.com/sh_awai'} className={'font-dingTalk'}>
+          <FaSquareXTwitter size={'18'}></FaSquareXTwitter>
+        </Link> */}
+      </div>
+
     </div>
   );
 }
